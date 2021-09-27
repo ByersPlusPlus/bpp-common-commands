@@ -1,0 +1,16 @@
+[package]
+name = "bpp-common-commands"
+version = "0.1.0"
+edition = "2018"
+authors = ["cozyGalvinism <reallifejunkies@googlemail.com>"]
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+bpp-command-api = { git = "https://github.com/ByersPlusPlus/bpp-command-api", tag = "v0.3.3" }
+tokio = { version = "1.10.1", features = ["macros", "rt-multi-thread", "sync"] }
+async-trait = "0.1.51"
+tonic = "0.5.2"
+float-ord = "0.3.2"
